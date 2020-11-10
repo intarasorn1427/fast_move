@@ -1,5 +1,8 @@
 
 import base.Bike;
+import base.Location;
+import base.Parcel;
+import base.ParcelStatus;
 import java.util.Scanner;
 import base.Person;
 
@@ -38,5 +41,13 @@ public class FastMoveConsoleApplication {
        String lastname = sc2.next();
        Person a = new Person(firstname,lastname);
    }
+   public void inPutParcel(){
+       Scanner sc = new Scanner(System.in);
+        Parcel parcels = new Parcel(sc.nextInt(),ParcelStatus.SHIPPING,new Location(sc.nextDouble(),sc.nextDouble())); 
+     
+   }
+   
+   
+   
     
 }
