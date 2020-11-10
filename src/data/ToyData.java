@@ -8,7 +8,10 @@ public class ToyData {
 
     public static Bike[] getBikes() {
         Bike[] bikes = new Bike[3];
-        // your code
+        bikes[0] = new Bike("banana" , 300);
+        bikes[1] = new Bike("apple" , 200);
+        bikes[2] = new Bike("fish", 560);
+                
 
         return bikes;
     }
