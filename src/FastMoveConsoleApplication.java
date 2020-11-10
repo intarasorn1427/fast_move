@@ -1,7 +1,7 @@
 
 import base.Bike;
 import java.util.Scanner;
-
+import base.Person;
 
 
 
@@ -30,7 +30,13 @@ public class FastMoveConsoleApplication {
        int num = scn2.nextInt();
        this.bikes = new Bike(name, num);
        
-   
+       Scanner sc = new Scanner(System.in);
+       System.out.print("Name: ");
+       String firstname = sc.next();
+       Scanner sc2 = new Scanner(System.in);
+       System.out.print("Lastname: ");
+       String lastname = sc2.next();
+       Person a = new Person(firstname,lastname);
    }
     
 }
